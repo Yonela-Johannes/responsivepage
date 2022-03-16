@@ -1,0 +1,236 @@
+
+.container {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper {
+    height: 70vh;
+}
+.wrapper p.title{
+    border-bottom: 1px solid gray;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+    border: .3px solid gray;
+    border-radius: 15px;
+    background-color: rgb(250, 225, 192);
+}
+.title {
+    font-weight: bold;
+}
+img.profileImage {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: .3px solid gray;
+    border: .3px solid white;
+}
+.subtitle {
+    font-size: 14px;
+}
+.description {
+    padding: 5px;
+    width: 300px;
+    margin: 0 10px;
+    border-bottom: .3px solid gray;
+}
+.description span{
+    font-size: 11px;
+    font-weight: medium;
+    color: rgb(151, 147, 147);
+}
+.row {
+    display: flex;
+    padding: 20px 10px;
+}
+
+.bottomContainer {
+    padding: 0;
+    margin: 0;
+}
+.row img.cityImage {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.centerTwo {
+    border: none;
+}
+
+/* Grid and language page */
+
+.grid {
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'header header'
+                        'rowOne colOne'
+                        'rowTwo colTwo'
+                        'rowThree colThree'
+                        'rowFour colFour'
+    ;
+    justify-content: center;
+    text-align: center;
+}
+.gap{
+ border: 1px solid white;
+ margin: 0;
+ padding: 0;
+ background-color: rgb(196, 196, 196);
+}
+.gap p {
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.rowHeader {
+    display: flex;
+    justify-content: space-around;
+    grid-area: header;
+    background-color: rgb(88, 88, 88);
+}
+.rowHeader p {
+    font-size: 16px;
+    font-weight: bold;
+}
+.rowOne {
+    display: flex;
+    justify-content: space-around;
+    grid-area: rowOne;
+    background: rgb(221, 221, 221);
+}
+.colOne{
+    grid-area: colOne;
+    background: rgb(221, 221, 221);
+}
+.rowTwo {
+    display: flex;
+    justify-content: space-around;
+    grid-area: rowTwo;    
+}
+.colTwo {
+grid-area: colTwo;
+}
+.rowThree {
+    display: flex;
+    justify-content: space-around;
+    grid-area: rowThree;
+    background: rgb(221, 221, 221);
+}
+.colThree{
+    grid-area: colThree;
+    background: rgb(221, 221, 221);
+}
+.rowFour {
+    display: flex;
+    justify-content: space-around;
+    grid-area: rowFour; 
+}
+
+.colFour {
+    grid-area: colFour;
+}
+
+
+/* History page */
+
+.hisWrapper {
+    display: flex;
+    padding: 10px;
+}
+
+.hisContainer {
+    padding: 10px;
+}
+
+.hisContainer p{
+}
+img.imageHistorical{
+    width: 190px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+p.subtitle{
+    font-weight: bold;
+}
+.bottomWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: flex-start;
+}
+.bottomWrapper p{
+    width: 200px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px){
+    .container {
+        padding-top: 150px;
+        margin-bottom: 30px;
+        background-color: white;
+    }
+    .center {
+        border: none;
+        background-color: antiquewhite;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .subtitle {
+        font-size: 12px;
+    }
+    .description {
+        font-size: 14px;
+        padding: 5px;
+        width: 300px;
+        margin: 0 10px;
+        border-bottom: .3px solid gray;
+    }
+    img.profileImage {
+        border: none;
+        outline: none;
+    }
+    .grid {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'header header'
+                            'rowOne colOne'
+                            'rowTwo colTwo'
+                            'rowThree colThree'
+                            'rowFour colFour'
+        ;
+        justify-content: center;
+        text-align: center;
+    }
+    .gap{
+        border: .1px solid rgb(0, 0, 0);
+        margin: 0;
+        padding: 0;
+        background-color: rgb(196, 196, 196);
+       }
+       .languageContainer {
+           padding: 5px;
+       }
+
+}
+
+@media only screen and (max-width: 1200px){
+    .hisWrapper {
+        flex-direction: column;
+    }
+}

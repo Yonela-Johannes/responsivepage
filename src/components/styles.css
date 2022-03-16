@@ -1,0 +1,64 @@
+:root{
+    /* Navbar */
+    --background: rgb(241, 241, 241);
+    /* Hover */
+    --hover-cl: rgb(209, 209, 209);
+}
+
+
+.navbar{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    top: 1;
+    width: 100%;
+    background-color: var(--background);
+    border-bottom: 1px solid gray;
+}
+p.logo {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p.logo span{
+    color: crimson;
+}
+.logoLink {
+    color: black;
+    padding: 0 10px ;
+    text-decoration: none;
+}
+.navlist{
+    display: flex;
+}
+.navlink {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: .1s ease-in;
+    border-radius: 25px;
+}
+
+.navlink:hover {
+    background: var(--hover-cl);
+    outline: 1px solid rgb(131, 131, 131);
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1000px){
+    .navbar {
+        flex-direction: column;
+    }
+}
