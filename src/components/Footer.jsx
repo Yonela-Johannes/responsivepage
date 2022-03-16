@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../data/img/niello.png'
-import codeXlogo from '../data/img/logoCodex.svg'
+import codeXlogo from '../data/img/codex.png'
 function Footer() {
   return (
     <div className='footer'>
