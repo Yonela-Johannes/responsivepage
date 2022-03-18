@@ -61,4 +61,14 @@ p.logo span{
     .navbar {
         flex-direction: column;
     }
+    .hisContainer{
+        border-radius: 5px;
+        border-bottom: .3px solid gray;
+        background-color: rgb(132, 132, 132);
+        flex-direction: column;
+        margin: 5px;
+    }
+    .bottomWrapper{
+        flex-direction: column-reverse;
+    }
 }
