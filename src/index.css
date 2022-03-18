@@ -16,9 +16,7 @@ code {
   flex-direction: column;
 }
 main{
-  height: 93vh;
-  min-height: 100%;
-  /* background-color: antiquewhite; */
+  float: 1;
 }
 .footer {
   clear: both;
