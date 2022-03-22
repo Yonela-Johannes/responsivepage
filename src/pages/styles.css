@@ -1,6 +1,6 @@
 
 .container {
-    padding-top: 100px;
+    padding-top: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,15 +15,24 @@
 .center {
     display: flex;
     align-items: center;
-    justify-content: center;
     text-align: center;
     margin-bottom: 30px;
-    border: .3px solid gray;
-    border-radius: 15px;
-    background-color: rgb(250, 225, 192);
+    padding: 0 20px;
+    border-radius: 5px;
 }
+
 .title {
+    font-size: 18px;
     font-weight: bold;
+}
+
+.quote {
+    color: grey;
+    font-size: 16px;
+}
+.name {
+    font-weight: bold;
+    font-size: 20px;
 }
 img.profileImage {
     height: 120px;
@@ -53,25 +62,25 @@ img.profileImage {
 }
 
 .bottomContainer {
-    padding: 0;
-    margin: 0;
+    display: flex;
 }
 .row img.cityImage {
     width: 200px;
     height: 120px;
     object-fit: contain;
     border-radius: 15px;
+    float: left;
 }
 
-.centerTwo {
-    border: none;
-}
 
 /* Grid and language page */
 
 .grid {
+    width: 1000px;
+    height: 500px;
     border: 1px solid white;
     display: grid;
+    cursor: pointer;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'header header'
                         'rowOne colOne'
@@ -81,6 +90,7 @@ img.profileImage {
     ;
     justify-content: center;
     text-align: center;
+
 }
 .gap{
  border: 1px solid white;
@@ -89,7 +99,8 @@ img.profileImage {
  background-color: rgb(196, 196, 196);
 }
 .gap p {
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 600;
     padding: 5px 10px;
     cursor: pointer;
 }
@@ -100,7 +111,7 @@ img.profileImage {
     background-color: rgb(88, 88, 88);
 }
 .rowHeader p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 .rowOne {
@@ -147,37 +158,34 @@ grid-area: colTwo;
 .hisWrapper {
     display: flex;
     padding: 10px;
+    width: 80%;
 }
 
 .hisContainer {
     padding: 10px;
+    background-color: rgb(195, 203, 209);
+    border-right: .3px solid white;
 }
 
-.hisContainer p{
-}
 img.imageHistorical{
+    margin: 10px;
+    float: left;
     width: 190px;
-    height: 120px;
-    object-fit: contain;
+    height: 150px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
 p.subtitle{
     font-weight: bold;
-}
-.bottomWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: flex-start;
+    font-size: 20px;
+    border-bottom: .3px solid white;
 }
 .bottomWrapper p{
-    width: 200px;
-    padding: 0 10px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
-@media only screen and (max-width: 1000px){
+ @media only screen and (max-width: 1000px){
     .container {
         padding-top: 150px;
         margin-bottom: 30px;
@@ -186,6 +194,7 @@ p.subtitle{
     .center {
         border: none;
         background-color: antiquewhite;
+        padding: 20px;
     }
     .row {
         flex-direction: column;
@@ -205,6 +214,8 @@ p.subtitle{
         outline: none;
     }
     .grid {
+        width: 700px;
+        height: 300px;
         border: 1px solid black;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -229,8 +240,19 @@ p.subtitle{
 
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 800px){
+    .grid {
+        width: 550px;
+        height: 200px;
+    }
     .hisWrapper {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .grid {
+        width: 250px;
+        height: 100px;
     }
 }
